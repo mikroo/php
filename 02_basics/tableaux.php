@@ -55,6 +55,5 @@ echo '<pre/>';
 echo array_key_exists('prenom', $coordonnees);
 // in_array
 echo in_array('Michel', $prenoms);
-
 //array_search
 echo in_array('Nicole', $prenoms);
