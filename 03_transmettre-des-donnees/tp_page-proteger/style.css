@@ -1,0 +1,16 @@
+.content{
+	border: 1px solid gray;
+	border-radius: 10px;
+	width: 250px;
+	padding: 20px;
+	text-align: center;
+	margin: auto;
+}
+
+input{
+	padding: 5px;
+}
+
+input[type="submit"]{
+	padding: 3px;
+}
