@@ -2,28 +2,45 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mini-chat</title>
+	<title>Minichat</title>
+	<link rel="stylesheet" type="text/css" href="webroot/css/style.css">
+	<link rel="stylesheet" type="text/css" href="webroot/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
 <body>
-	<div id="centre">
-		<form action="post.php" method="POST">
-			<label>Pseudo : <input type="text" name="pseudo"></label> <br>
-			<label>Message : <input type="text" name="message"></label> <br>
-			<input type="submit" value="Envoyer">
+	<div id="minichat">
+
+	<!-- # Nom interlocuteur -->
+	<div id="allocutaire" >
+		<p>allocutaire</p>
+	</div>
+
+
+	<!-- # Message envoyé par l'interlocuteur -->
+	<div id="friendMessage" class="message">
+		<p>salut</p>
+	</div>
+
+	<!-- # Mes réponses-->
+	<div id="myMessage" class="message">
+		<p>hee salut toi comment vas-tu ?</p>
+	</div>
+
+
+	<!-- # Formulaire d'envoi des messages -->
+	<div id="formulaire">
+		<form action="" method="" accept-charset="utf-8">
+			<input type="text" name="message">
+			<button type="submit">
+				<i class="fa fa-paper-plane" aria-hidden="true"></i>
+			</button>
+			
 		</form>
-		<p><a href="index.php">Rafraichir la page</a></p>
-		<div id="message">
-			<!-- Afficher les message -->
-			<?php 
-				include('connexion_sql.php');
-				$reponse = $bdd->query('SELECT * FROM minichat ORDER BY id DESC');
-				while($donnees = $reponse->fetch())
-				{
-					echo "<p><strong>".htmlspecialchars($donnees['pseudo'])."</strong> : " . htmlspecialchars($donnees['message']).'</p>'; 
-				}
-				$reponse->closeCursor();
-			?>
-		</div>
+	</div>
+
+
 	</div>
 </body>
 </html>
+
+<!-- # -->
