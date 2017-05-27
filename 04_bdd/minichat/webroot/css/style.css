@@ -10,12 +10,16 @@
 	font-family: 'Varela Round', sans-serif;
 }
 
-// Interlocuteur
+/* Interlocuteur */
 #allocutaire{
 	border: 1px solid black;
 	color: red;
 }
 
+#allocutaire p{
+	text-align: center;
+	margin: auto;
+}
 
 /*
  *		MESSAGES
@@ -25,7 +29,7 @@
 	color: red;
 }
 
-// Message envoyé par l'interlocuteur
+/* Message envoyé par l'interlocuteur */
 #friendMessage{
 	border: 1px solid green;
 }
