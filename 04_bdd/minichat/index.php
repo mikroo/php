@@ -8,39 +8,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
 <body>
-	<div id="minichat">
-
-	<!-- # Nom interlocuteur -->
-	<div id="allocutaire" >
-		<p>allocutaire</p>
-	</div>
-
-
-	<!-- # Message envoyé par l'interlocuteur -->
-	<div id="friendMessage" class="message">
-		<p>salut</p>
-	</div>
-
-	<!-- # Mes réponses-->
-	<div id="myMessage" class="message">
-		<p>hee salut toi comment vas-tu ?</p>
-	</div>
-
-
-	<!-- # Formulaire d'envoi des messages -->
-	<div id="formulaire">
+	<div id="inscription">
+		<h1>Minichat</h1>
 		<form action="" method="" accept-charset="utf-8">
-			<input type="text" name="message">
-			<button type="submit">
-				<i class="fa fa-paper-plane" aria-hidden="true"></i>
-			</button>
-			
+			<input type="text" name="nom" placeholder="Nom">
+			<input type="text" name="prenom" placeholder="Prénom">
+			<input type="password" name="password" placeholder="Mot de passe">
+			<input type="password" name="password2" placeholder="Mot de passe">
+			<input type="email" name="email" placeholder="Entrer votre adresse E-Mail">
+
+			<button type="submit">S'inscrire</button>
 		</form>
-	</div>
-
-
 	</div>
 </body>
 </html>
-
-<!-- # -->
